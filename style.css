@@ -1,0 +1,24 @@
+/* style.css */
+
+/* Basic reset for body to remove default margins */
+body {
+    margin: 0;
+    overflow: hidden; /* Hides any scrollbars that might appear */
+    background-color: #000; /* Sets a solid black background for the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+}
+
+/* Styles for the canvas element */
+canvas {
+    display: block; /* Removes any extra space below the canvas */
+    background-color: #000; /* Ensures the canvas background is black */
+    /*
+      Set width and height to 100% of its parent (which is the body in this case).
+      The actual drawing dimensions will be set in JavaScript to match window size.
+    */
+    width: 100%;
+    height: 100%;
+}
